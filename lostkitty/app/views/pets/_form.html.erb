@@ -1,0 +1,7 @@
+<%= simple_form_for @pet do |f| %>
+  <%= f.input :name %>
+  <%= f.input :address %>
+  <%= f.select :category, Pet::CATEGORIES, include_blank:"Select a category" %>
+  <%= f.date_field :found_on %>
+  <%= f.button :submit %>
+<% end %>
